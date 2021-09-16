@@ -22,16 +22,11 @@ def anagram_check_s2(str1, str2):
        else:
            counter[letter] = 1
     
-    print(counter, '-1-')
-    
     for letter in str2:
         if letter in counter:
            counter[letter] -=1
         else:
            counter[letter] = 1
-    
-    print(counter, '-2-')
-
     
     for k in counter:
         if counter[k] != 0:
