@@ -29,10 +29,8 @@ def cycle_check(node):
     marker2 = node
     while marker1 != None and marker2 != None:
         marker1 = marker1.next_node
-        
-        marker2 = marker2.next_node.next_node
-        print(marker2, marker1)
-        
+        if not marker2.next_node:
+            marker2 = marker2.next_node.next_node  
         
         if marker1 == marker2:
             return True
@@ -63,9 +61,8 @@ if __name__ == '__main__':
     
     x.next_node = y
     y.next_node = z
-    z.next_node = None
     
-    res = cycle_check(x)
+    res = cycle_check(a)
     print(res)
     
     
