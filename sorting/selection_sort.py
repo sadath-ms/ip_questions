@@ -25,8 +25,6 @@ def selection_sort(arr):
         temp = arr[fillslot]
         arr[fillslot] = arr[postion_of_max]
         arr[postion_of_max] = temp
-        
-        print(arr)
 
     return arr
 

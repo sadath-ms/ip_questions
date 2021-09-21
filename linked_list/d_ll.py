@@ -25,4 +25,14 @@ class DoubleLinkedList(object):
         self.value = value
         self.next_node = None
         self.prev_node = None
-        
+
+if __name__ == '__main__':
+   a =  DoubleLinkedList(1)
+   b =  DoubleLinkedList(2)
+   c =  DoubleLinkedList(3)
+   
+   a.next_node = b
+   b.prev_node = a
+
+
+    

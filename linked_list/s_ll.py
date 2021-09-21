@@ -47,6 +47,16 @@ Removing an element from a singly linked list
     - but we cannot reach the node before the tail by following next links from the tail
     - if we want to support such an operation effectively , we will need to make our list doubly linked
     
+prons:-
+- linked lists have constant time insertions and deletions in any postions, in comparision,
+    arrays requires O(n) time to do the same thing
+-linked lists can continue to expand without having to specify their size ahead of time
+
+cons:-
+- to access an elemement in linked list , you need to take O(k) time to got from head of the list to the
+  k th element , in constrast , arrays have constant time operations to access elements in an array
+  
+    
 """
 
 class Node(object):
@@ -61,7 +71,7 @@ if __name__ == '__main__':
     a = Node(1)
     b = Node(2)
     c = Node(3)
-    a.next_node = b
+    a.next_node = b 
     b.next_node = c
     
     print(c.value, c.next_node.value)
